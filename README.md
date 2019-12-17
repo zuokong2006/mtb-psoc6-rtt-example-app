@@ -1,4 +1,4 @@
-# PSoC 6 MCU: PSoC6 RT-Thraed MTB Exampe Application
+# PSoC 6 MCU: PSoC6 RT-Thread MTB Exampe Application
 
 This is a minimal starter application template for PSoC® 6 MCU devices. 
 
