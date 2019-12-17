@@ -1,8 +1,6 @@
 # PSoC 6 MCU: PSoC6 RT-Thread MTB Exampe Application
 
-This is a minimal starter application template for PSoC® 6 MCU devices. 
-
-For instructions on modifying and using this application template to create applications, follow steps from the section **My First PSoC 6 MCU Design Using ModusToolbox IDE** in the **[AN228571](https://www.cypress.com/AN228571) – Getting Started with PSoC 6 MCU on ModusToolbox.**
+This is the RT-Thread example project for PSoC® 6 MCU devices. 
 
 ## Requirements
 
@@ -12,11 +10,33 @@ For instructions on modifying and using this application template to create appl
 
 ## Supported Kits
 
-- [PSoC 6 Wi-Fi BT Prototyping Kit](https://www.cypress.com/CY8CPROTO-062-4343W) (CY8CPROTO-062-4343W) - Default target
-- [PSoC 6 Wi-Fi-BT Pioneer Kit](https://www.cypress.com/CY8CKIT-062-WiFi-BT) (CY8CKIT-062-WiFi-BT)
 - [PSoC 6 BLE Pioneer Kit](https://www.cypress.com/CY8CKIT-062-BLE) (CY8CKIT-062-BLE)
-- [PSoC 6 BLE Prototyping Kit](https://www.cypress.com/CY8CPROTO-063-BLE) (CY8CPROTO-063-BLE)
-- [PSoC 62S2 Wi-Fi BT Pioneer Kit](https://www.cypress.com/CY8CKIT-062S2-43012) (CY8CKIT-062S2-43012)
+
+## Hardware Setup
+
+This example uses the board's default configuration. See the kit user guide to ensure the board is configured correctly.
+
+## Software Setup
+
+Install a terminal emulator if you don't have one. Instructions in this document use [Tera Term](https://ttssh2.osdn.jp/index.html.en).
+
+## Using the Code Example
+
+1. Clone the mtb-psoc6-rtt-example-app project from https://github.com/zuokong2006/mtb-psoc6-rtt-example-app.
+
+2. Click the **New Application** link in the Quick Panel (or, use **File > New > ModusToolbox IDE Application**).
+
+3. Pick a kit supported by the code example from the list shown in the **IDE Application** dialog.
+
+4. In the **Starter Application** window, import the "mtb-psoc6-rtt-example-app" example application.
+
+5. Click **Next** and complete the application creation process.
+
+6. Connect the board to your PC using the provided USB cable through the USB connector.
+
+7. Open a terminal program and select the KitProg3 COM port. Set the serial port parameters to 8N1 and 115200 baud.
+
+8. Program the board.
 
 ## Related Resources
 
@@ -50,8 +70,6 @@ Cypress provides a wealth of data at www.cypress.com to help you select the righ
 For PSoC 6 MCU devices, see [How to Design with PSoC 6 MCU - KBA223067](https://community.cypress.com/docs/DOC-14644) in the Cypress community.
 
 ## Document History
-
-Document Title: CE228742 - PSoC 6 MCU: Empty Application Template
 
 | Version | Description of Change |
 | ------- | --------------------- |

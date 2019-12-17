@@ -98,10 +98,10 @@ INCLUDES=$(RTT_ROOT_DIR)/include/ \
          $(RTT_ROOT_DIR)/components/drivers/include/
 
 # Add additional defines to the build process (without a leading -D).
-DEFINES=HAVE_SIGVAL HAVE_SIGEVENT HAVE_SIGINFO RT_USING_NEWLIB __HEAP_SIZE=0x10000 __SOFTFP__
+DEFINES=HAVE_SIGVAL HAVE_SIGEVENT HAVE_SIGINFO RT_USING_NEWLIB __HEAP_SIZE=0x10000 
 
 # Select softfp or hardfp floating point. Default is softfp.
-VFP_SELECT=
+VFP_SELECT=hardfp
 
 # Additional / custom C compiler flags.
 #
@@ -119,7 +119,7 @@ CXXFLAGS=
 #
 # NOTE: Includes and defines should use the INCLUDES and DEFINES variable
 # above.
-ASFLAGS=
+ASFLAGS=-mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wa,-mimplicit-it=always
 
 # Additional / custom linker flags.
 LDFLAGS=
