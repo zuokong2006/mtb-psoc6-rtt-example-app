@@ -37,7 +37,6 @@ static void thread2_entry(void* parameter)
     {
         rt_kprintf("thread2 count: %d\n",count++);
         rt_thread_delay(RT_TICK_PER_SECOND/4);
-        
     }
     
     rt_thread_delay(RT_TICK_PER_SECOND * 4);

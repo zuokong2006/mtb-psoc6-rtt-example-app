@@ -304,7 +304,7 @@
                     </Personality>
                 </Block>
                 <Block location="scb[5]">
-                    <Alias value="UART0_HW"/>
+                    <Alias value="UART0"/>
                     <Personality template="mxs40uart" version="1.0">
                         <Param id="ComMode" value="CY_SCB_UART_STANDARD"/>
                         <Param id="IrdaLowPower" value="false"/>

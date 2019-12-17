@@ -83,17 +83,17 @@ extern "C" {
 #define CintB_PORT_NUM 7u
 #define CYBSP_CSD_HW CSD0
 #define CYBSP_CSD_IRQ csd_interrupt_IRQn
-#define UART0_HW_ENABLED 1U
-#define UART0_HW_HW SCB5
-#define UART0_HW_IRQ scb_5_interrupt_IRQn
+#define UART0_ENABLED 1U
+#define UART0_HW SCB5
+#define UART0_IRQ scb_5_interrupt_IRQn
 
 #if defined (CY_USING_HAL)
 	extern const cyhal_resource_inst_t CYBSP_BLE_obj;
 #endif //defined (CY_USING_HAL)
 extern cy_stc_csd_context_t cy_csd_0_context;
-extern const cy_stc_scb_uart_config_t UART0_HW_config;
+extern const cy_stc_scb_uart_config_t UART0_config;
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t UART0_HW_obj;
+	extern const cyhal_resource_inst_t UART0_obj;
 #endif //defined (CY_USING_HAL)
 
 void init_cycfg_peripherals(void);

@@ -38,7 +38,7 @@ cy_stc_csd_context_t cy_csd_0_context =
 {
 	.lockKey = CY_CSD_NONE_KEY,
 };
-const cy_stc_scb_uart_config_t UART0_HW_config = 
+const cy_stc_scb_uart_config_t UART0_config = 
 {
 	.uartMode = CY_SCB_UART_STANDARD,
 	.enableMutliProcessorMode = false,
@@ -67,7 +67,7 @@ const cy_stc_scb_uart_config_t UART0_HW_config =
 	.txFifoIntEnableMask = 0UL,
 };
 #if defined (CY_USING_HAL)
-	const cyhal_resource_inst_t UART0_HW_obj = 
+	const cyhal_resource_inst_t UART0_obj = 
 	{
 		.type = CYHAL_RSC_SCB,
 		.block_num = 5U,
@@ -86,6 +86,6 @@ void init_cycfg_peripherals(void)
 
 	Cy_SysClk_PeriphAssignDivider(PCLK_SCB5_CLOCK, CY_SYSCLK_DIV_8_BIT, 1U);
 #if defined (CY_USING_HAL)
-	cyhal_hwmgr_reserve(&UART0_HW_obj);
+	cyhal_hwmgr_reserve(&UART0_obj);
 #endif //defined (CY_USING_HAL)
 }

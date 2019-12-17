@@ -38,7 +38,7 @@ void rt_hw_board_init()
 		CY_ASSERT(0);
 	}
 
-    Cy_SysTick_Init(CY_SYSTICK_CLOCK_SOURCE_CLK_IMO, SystemCoreClock/RT_TICK_PER_SECOND);
+    Cy_SysTick_Init(CY_SYSTICK_CLOCK_SOURCE_CLK_CPU, SystemCoreClock/RT_TICK_PER_SECOND);
     Cy_SysTick_SetCallback(0, SysTick_Handler_CB);
     
     /* initialize UART device */

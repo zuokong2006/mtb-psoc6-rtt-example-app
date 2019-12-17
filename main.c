@@ -43,6 +43,7 @@
 #include "cyhal.h"
 #include "cybsp.h"
 #include "rtthread.h"
+#include "demo.h"
 
 int main(void)
 {
